@@ -1,57 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
+  background-color: #edebd7;
+  color: #292930;
 }
 
 *:focus {
   outline: none;
 }
 
-label
-{
+label {
   font-family: 'Poppins', sans-serif !important;
   color: rgb(118, 118, 118);
   font-size: large;
 }
 
-p
-{
+p {
   font-size: large;
 }
 
-.bt
-{
-    color: white;
-    border: none;
-    border-radius: 9px;
-    background-color: #EE7C36;
-    cursor: pointer;
-    font-size: large;
-    padding: 10px 25px;
-    margin-left: 2vw;
-    min-width: 120px;
-    font-family: 'Poppins', sans-serif;
+.bt {
+  color: white;
+  border: none;
+  border-radius: 9px;
+  background-color: #1a936f;
+  cursor: pointer;
+  font-size: large;
+  padding: 10px 25px;
+  margin-left: 2vw;
+  min-width: 120px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.bt:hover
-{
+.bt:hover {
   transform: scale(0.98);
   transition: 0.1s;
 }
 
-header
-{
-  margin: 2vh auto ;
+header {
+  margin: 2vh auto;
   height: 8vh;
   display: flex;
   align-items: center;
   font-family: 'Poppins', sans-serif;
 }
 
-.medium-editor-element
-{
+.medium-editor-element {
   padding: 10px;
   min-height: 18px;
   border: none;
@@ -59,46 +55,41 @@ header
   font-size: large;
 }
 
-.medium-editor-placeholder
-{
+.medium-editor-placeholder {
   color: rgb(118, 118, 118);
 }
 
-.inlineAdd
-{
+.inlineAdd {
   display: inline;
 }
 
-.header--planeDiv
-{
+.header--planeDiv {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.header--planeDiv > p
-{
+.header--planeDiv>p {
   font-size: x-large;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
-.header--logoImg
-{
-  height: 100%;
+.header--logoImg {
+  height: auto;
   padding-right: 5px;
   float: left;
+  max-width: 200px;
+  width: 100%;
 }
 
-.editor
-{
+.editor {
   width: 85vw;
   margin: 0 auto;
 }
 
-.submitIcon
-{
+.submitIcon {
   color: rgb(118, 118, 118);
   cursor: pointer;
   display: inline;
@@ -106,128 +97,116 @@ header
 }
 
 
-.main
-{
+.main {
   width: 75vw;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding-bottom: 10vh;
 }
 
 
-.tilt
-{
+.tilt {
   animation: tiltPlus 0.3s forwards;
 }
 
 @keyframes tiltPlus {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(45deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
 }
 
-.main--customIcon
-{
+.main--customIcon {
   color: rgb(118, 118, 118);
   cursor: pointer;
   margin: auto 15px;
 }
 
 
-.main--titleInput
-{
+.main--titleInput {
   border: none;
   font-size: xx-large;
-  margin:1vh auto 3vh auto;
+  margin: 1vh auto 3vh auto;
   width: 100%;
   display: inline;
   font-family: 'Poppins', sans-serif;
 }
 
-.main--titleInput:focus
-{
+.main--titleInput:focus {
   outline: none;
 }
 
-.section--textInput
-{
+.section--textInput {
   border: none;
-  overflow:hidden;
+  overflow: hidden;
   font-size: large;
-  margin:1vh auto 3vh auto;
+  margin: 1vh auto 3vh auto;
   width: 100%;
   display: inline;
   font-family: 'Poppins', sans-serif !important;
-    
+
 }
 
-.section--textInput:focus
-{
+.section--textInput:focus {
   outline: none;
 }
 
-#imageInput
-{
+#imageInput {
   display: none;
 }
 
-.section--imageInput
-{
-  display:flex;
-  margin:1vh auto 3vh auto;
+.section--imageInput {
+  display: flex;
+  margin: 1vh auto 3vh auto;
 }
 
-.ImageUpload--div
-{
+.ImageUpload--div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.ImagePreview--img
-{
+.ImagePreview--img {
   display: block;
   width: 40%;
   margin: 3vh auto;
 }
 
-.ImagePreview--div
-{
+.ImagePreview--div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .Preview--div,
-.Publish--div
-{
+.Publish--div {
   width: 68vw;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding-bottom: 10vh;
 }
 
-.Preview--div > h1
-{
+.Preview--div>h1 {
   font-size: xx-large;
 }
 
 .Preview--emptyErr,
-.published
-{
+.published {
   text-align: center;
   font-size: large;
   color: rgb(118, 118, 118);
   margin-top: 20vh;
 }
 
-.Publish--div
-{
+.Publish--div {
   display: flex;
   flex-direction: row;
-  gap:3vw;
+  gap: 3vw;
 }
 
-.img--upload
-{
-  background-color:#ECECEC ;
+.img--upload {
+  background-color: #edebd7;
   color: #292930;
   height: 250px;
   width: 85%;
@@ -235,34 +214,31 @@ header
   display: flex;
   align-items: center;
   justify-content: center;
+  border: solid 3px #a39594;
 }
 
-.img--upload > p,
-.img--upload > i
-{
+.img--upload>p,
+.img--upload>i {
   display: inline;
   color: rgb(118, 118, 118);
 }
 
-.story--prev
-{
+.story--prev {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.story--prev > img
-{
+.story--prev>img {
   width: 85%;
   margin: 2vh auto;
   max-width: 300px;
   min-width: 300px;
 }
 
-.story--prev > input,
-.boldText > input,
-.img--upload > input
-{
+.story--prev>input,
+.boldText>input,
+.img--upload>input {
   border-style: none none solid none;
   width: 100%;
   font-size: large;
@@ -270,15 +246,13 @@ header
   background-color: transparent;
 }
 
-.boldText > input,
-.boldText > input::placeholder
-{
+.boldText>input,
+.boldText>input::placeholder {
   font-size: x-large;
   font-weight: 700;
 }
 
-.tag--select
-{
+.tag--select {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -286,50 +260,45 @@ header
   justify-content: space-between;
 }
 
-.tag--select > p
-{
+.tag--select>p {
   align-self: flex-start;
 }
 
-.tag--options
-{
+.tag--options {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.tag--options > div
-{
+.tag--options>div {
   display: flex;
   flex-direction: row;
-  border: 2px solid #999FAE;
+  border: 3px solid #a39594;
   border-radius: 50px;
-  color: #999FAE;
+  color: #a39594;
   font-size: medium;
   min-width: 145px;
   margin: 1vh auto;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-right: 10px;
+  padding: 0 10px;
   cursor: pointer;
 }
 
-.tagName
-{
+.tagName {
   width: 100%;
 }
 
-.tag--options > div:hover
-{
+.tag--options>div:hover {
   transform: scale(0.98);
   transition: 0.1s;
   color: #292930;
   border: 2px solid #292930;
 }
 
-.tagImg
- {
+.tagImg {
   width: 35px;
-  padding-left:6px;
- }
+  padding-left: 6px;
+  position: relative;
+}
