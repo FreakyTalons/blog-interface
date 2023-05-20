@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import AddSection from "./AddSection";
 
 export default function Main({ blogSections, setBlogSections }) {
-
   let val = "";
 
-  if(blogSections[0])
-  {
+  if (blogSections[0]) {
     val = blogSections[0].content;
   }
 
@@ -39,7 +37,7 @@ export default function Main({ blogSections, setBlogSections }) {
   };
   return (
     <div className="main">
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <div style={{ display: "flex" }}>
           <input
             type="text"
